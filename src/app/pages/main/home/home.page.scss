@@ -1,0 +1,68 @@
+ion-content {
+  --background: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-margin {
+  margin-top: 140px; /* Margen superior para alejar del header */
+  margin-bottom: 50px; /* Margen inferior para espacio entre el logo y el input */
+  width: 300px;
+  height: auto;
+}
+
+ion-item {
+  --background: #ffffff;
+  --border-radius: 8px;
+  margin-bottom: 15px;
+  width: 90%; /* Ancho del input para centrarlo */
+}
+
+ion-input {
+  --padding-start: 10px;
+}
+
+ion-list {
+  width: 90%; /* Ancho de la lista para centrarla */
+  max-height: 200px; /* Controla la altura máxima de la lista */
+  overflow-y: auto; /* Añade scroll si es necesario */
+  margin-top: 10px;
+  --background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ion-list ion-item {
+  --background: transparent;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+ion-list ion-item:hover,
+ion-list ion-item.ion-focused {
+  background-color: #dfe4ea;
+}
+
+ion-list ion-item:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+
+ion-button {
+  --background: linear-gradient(45deg, #f88400, #c3704a);
+  --border-radius: 8px;
+  margin-top: 20px;
+  width: 90%; /* Ancho del botón para centrarlo */
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+ion-button:hover {
+  --background: linear-gradient(45deg, #388E3C, #7CB342);
+}

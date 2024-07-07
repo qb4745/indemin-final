@@ -1,0 +1,29 @@
+<app-header title="" [showBackButton]="false"></app-header>
+
+<ion-content class="ion-padding">
+  <ion-progress-bar *ngIf="!isLoaded" type="indeterminate" color="primary"></ion-progress-bar>
+  <div class="center-container" [ngClass]="{'loaded': isLoaded}">
+    <div class="logo-container">
+      <img src="assets/Indemin-logo.png" alt="Indemin Logo" class="logo-margin">
+    </div>
+
+    <ion-card-content class="login-card">
+      <div id="container">
+        <ion-list>
+          <ion-item>
+            <ion-input label="Email" placeholder="Correo" [(ngModel)]="userLogin.email"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input type="password" label="Contraseña" placeholder="Contraseña" [(ngModel)]="userLogin.password"></ion-input>
+          </ion-item>
+        </ion-list>
+
+        <ion-button expand="block" shape="round" (click)="login()">Iniciar Sesion</ion-button> <!-- Eliminado el argumento userLogin -->
+      </div>
+
+      <div class="ion-padding">
+        <a>¿Olvidaste tu Contraseña?</a>
+      </div>
+    </ion-card-content>
+  </div>
+</ion-content>

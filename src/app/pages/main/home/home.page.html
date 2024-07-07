@@ -1,0 +1,16 @@
+<ion-content class="ion-padding">
+  <img src="assets/Indemin-logo.png" alt="Indemin Logo" class="logo-margin">
+  
+  <ion-item>
+    <ion-label position="floating">Código Interno</ion-label>
+    <ion-input [(ngModel)]="maquina.codigo_interno" (ionInput)="filterMaquinas($event)"></ion-input>
+  </ion-item>
+
+  <ion-list *ngIf="filteredMaquinas.length > 0">
+    <ion-item *ngFor="let maquina of filteredMaquinas" (click)="selectMaquina(maquina.codigo_interno)">
+      {{ maquina.codigo_interno }}
+    </ion-item>
+  </ion-list>
+  
+  <ion-button expand="block" (click)="buscarMaquina()">Buscar Máquina</ion-button>
+</ion-content>

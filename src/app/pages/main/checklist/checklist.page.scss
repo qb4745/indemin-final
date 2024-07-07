@@ -1,0 +1,45 @@
+/* Estilo para la barra de carga */
+.loading-bar {
+    --height: 4px; /* Altura de la barra de carga */
+  }
+  .bold-text {
+    font-weight: bold;
+  }
+  
+  /* Ajuste de margen para ion-item */
+  ion-item {
+    --padding-start: 10px; /* Ajuste de margen izquierdo */
+    --padding-end: 10px; /* Ajuste de margen derecho */
+  }
+  
+  .comment-button {
+    --background: #b6b6b6; /* Fondo celeste claro */
+    --color: #000000; /* Color azul oscuro */}
+
+.progress-bar-container {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-segment {
+  height: 100%;
+  background-color: #007bff; /* Color base de la barra */
+}
+.custom-toast {
+  --background: rgba(0, 0, 0, 0.8); // color de fondo del toast
+  --color: #fff; // color del texto del toast
+  --border-radius: 8px; // radio de borde del toast
+  --padding-start: 16px; // espacio interior izquierdo del toast
+  --padding-end: 16px; // espacio interior derecho del toast
+  --padding-top: 12px; // espacio interior superior del toast
+  --padding-bottom: 12px; // espacio interior inferior del toast
+  font-size: 14px; // tamaño de fuente del texto del toast
+}
